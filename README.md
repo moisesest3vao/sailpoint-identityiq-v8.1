@@ -1,7 +1,7 @@
 # SailPoint IIQ no Docker
 
 ## Sobre
-Tendo em vista a necessidade de ter uma forma descomplicada de codificar no IdentityIQ criamos uma instalação com uma infraestrutura preparada para está ferramenta. Essa é uma ótima maneira de desenvolver com o IdentityIQ rapidamente. Caso você utilize o SSB como ferramenta de BUILD a utilização dessa instalação podem ser estendida a seus ambientes produtivos.  
+SailPoint IdentityIQ V8.1 para estudos
 
 ## Configuração
 Para o uso dessa instalação devemos seguir os seguintes passos.
