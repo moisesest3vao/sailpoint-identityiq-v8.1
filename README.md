@@ -17,7 +17,7 @@ Essa instalação oferece 3 Conectores + Tasks Aggregation prontos
 Para o uso dessa instalação devemos seguir os seguintes passos.
 1.  Clonar o repositorio na sua estação de trabalho.
 2.  Realizar o download aqui https://community.sailpoint.com/ dos seguintes componentes
-	- [identityiq-8.1.zip](https://community.sailpoint.com/t5/IdentityIQ-Server-Software/IdentityIQ-8-1/ta-p/158175 "identityiq-8.1.zip")  
+	- [identityiq-8.1.zip](https://1drv.ms/u/s!AhnAweei26Brk65tG6FZ2fLZGU2fdg?e=1EYfBE "identityiq-8.1.zip")  
 	- [identityiq-8.1p2.jar](https://community.sailpoint.com/t5/IdentityIQ-Server-Software/IdentityIQ-8-1p2/ta-p/182114 "identityiq-8.1p2.jar") 
 	- [1_ssb-v6.1.zip](https://community.sailpoint.com/t5/Services-Standard-Deployment/Services-Standard-Build-SSB-v6-1/ta-p/76056 "1_ssb-v6.1.zip")  
 
