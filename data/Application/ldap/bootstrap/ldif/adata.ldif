@@ -1,0 +1,71 @@
+dn: ou=Groups,dc=corp1
+changetype: add
+objectclass: organizationalUnit
+ou: Groups
+
+dn: ou=Users,dc=corp1
+changetype: add
+objectclass: organizationalUnit
+ou: Users
+
+dn: cn=00000000,ou=Users,dc=corp1
+changetype: add
+objectclass: inetOrgPerson
+cn: 00000000
+givenname: Luis
+sn: Padovani
+displayname: Luis Padovani
+mail: luis@corp
+userpassword: Change@123
+objectclass: personnel
+employeeID: 00000000
+
+dn: cn=00000001,ou=Users,dc=corp1
+changetype: add
+objectclass: inetOrgPerson
+cn: 00000001
+givenname: Cecile
+sn: Serilda
+displayname: Cecile Serilda
+mail: cecile@corp
+userpassword: Change@123
+objectclass: personnel
+employeeID: 00000001
+
+dn: cn=00000003,ou=Users,dc=corp1
+changetype: add
+objectclass: inetOrgPerson
+cn: 00000003
+givenname: Sonni 
+sn: Malanie
+displayname: Sonni Malanie
+mail: sonni@corp
+userpassword: Change@123
+objectclass: personnel
+employeeID: 00000003
+
+dn: cn=00000004,ou=Users,dc=corp1
+changetype: add
+objectclass: inetOrgPerson
+cn: 00000004
+givenname: Babita  
+sn: Sharl
+displayname: Babita Sharl
+mail: babita@corp
+userpassword: Change@123
+objectclass: personnel
+employeeID: 00000004
+
+dn: cn=Admins,ou=Groups,dc=corp1
+changetype: add
+cn: Admins
+objectclass: groupOfUniqueNames
+uniqueMember: cn=00000001,ou=Users,dc=corp1
+uniqueMember: cn=00000000,ou=Users,dc=corp1
+
+dn: cn=Maintaners,ou=Groups,dc=corp1
+changetype: add
+cn: Maintaners
+objectclass: groupOfUniqueNames
+uniqueMember: cn=00000003,ou=Users,dc=corp1
+uniqueMember: cn=00000000,ou=Users,dc=corp1

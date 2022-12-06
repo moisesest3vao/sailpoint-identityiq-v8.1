@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Application PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Application connector="sailpoint.connector.LDAPConnector" featuresString="AUTHENTICATE, PROVISIONING, SYNC_PROVISIONING, PASSWORD, MANAGER_LOOKUP, SEARCH" icon="directory2Icon" name="OpenLDAP" profileClass="" type="OpenLDAP - Direct">
+          
+    
+    <AccountCorrelationConfig>
+                    
+        
+        <Reference class="sailpoint.object.CorrelationConfig" name="OpenLDAP"/>
+                  
+    
+    </AccountCorrelationConfig>
+          
+    
+    <Attributes>
+                    
+        
+        <Map>
+                              
+            
+            <entry key="LDAPApplicationVersion" value="2.0"/>
+                              
+            
+            <entry key="acctAggregationEnd">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Date>1618783435675</Date>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="acctAggregationStart">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Date>1618783435475</Date>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="afterProvisioningRule"/>
+                              
+            
+            <entry key="authSearchAttributes">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <List>
+                                                            
+                        
+                        <String>cn</String>
+                                                            
+                        
+                        <String>uid</String>
+                                                            
+                        
+                        <String>mail</String>
+                                                          
+                    
+                    </List>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="authorizationType" value="simple"/>
+                              
+            
+            <entry key="beforeProvisioningRule"/>
+                              
+            
+            <entry key="charsToEscapeAtEndInDN" value=" "/>
+                              
+            
+            <entry key="charsToEscapeAtStartInDN" value=" #"/>
+                              
+            
+            <entry key="charsToEscapeInDN" value=",+\&quot;&lt;&gt;;"/>
+                              
+            
+            <entry key="charsToEscapeWhileProvisioning" value="/"/>
+                              
+            
+            <entry key="compositeDefinition"/>
+                              
+            
+            <entry key="convertHexToCharacter" value="true"/>
+                              
+            
+            <entry key="group.searchDNs">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <List>
+                                                            
+                        
+                        <Map>
+                                                                      
+                            
+                            <entry key="iterateSearchFilter"/>
+                                                                      
+                            
+                            <entry key="objectType" value="group"/>
+                                                                      
+                            
+                            <entry key="searchDN" value="%%LDAP_DN_GROUP%%"/>
+                                                                      
+                            
+                            <entry key="searchScope" value="SUBTREE"/>
+                                                                    
+                        
+                        </Map>
+                                                          
+                    
+                    </List>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="host" value="%%LDAP_HOST%%"/>
+                              
+            
+            <entry key="nativeChangeDetectionAttributeScope" value="entitlements"/>
+                              
+            
+            <entry key="nativeChangeDetectionAttributes"/>
+                              
+            
+            <entry key="nativeChangeDetectionEnabled">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="nativeChangeDetectionOperations"/>
+                              
+            
+            <entry key="pageSize" value="100"/>
+                              
+            
+            <entry key="password" value="%%LDAP_PASSWORD%%"/>
+                              
+            
+            <entry key="passwordAttr" value="userPassword"/>
+                              
+            
+            <entry key="port" value="%%LDAP_PORT%%"/>
+                              
+            
+            <entry key="searchDNs">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <List>
+                                                            
+                        
+                        <Map>
+                                                                      
+                            
+                            <entry key="groupMembershipSearchScope">
+                                                                                
+                                
+                                <value>
+                                                                                          
+                                    
+                                    <List>
+                                                                                                    
+                                        
+                                        <Map>
+                                                                                                              
+                                            
+                                            <entry key="groupMemberFilterString"/>
+                                                                                                              
+                                            
+                                            <entry key="groupMembershipSearchDN">
+                                                                                                                        
+                                                
+                                                <value>
+                                                                                                                                  
+                                                    
+                                                    <List>
+                                                                                                                                            
+                                                        
+                                                        <String>%%LDAP_DN_GROUP%%</String>
+                                                                                                                                          
+                                                    
+                                                    </List>
+                                                                                                                                
+                                                
+                                                </value>
+                                                                                                                      
+                                            
+                                            </entry>
+                                                                                                              
+                                            
+                                            <entry key="objectType" value="group"/>
+                                                                                                            
+                                        
+                                        </Map>
+                                                                                                  
+                                    
+                                    </List>
+                                                                                        
+                                
+                                </value>
+                                                                              
+                            
+                            </entry>
+                                                                      
+                            
+                            <entry key="iterateSearchFilter"/>
+                                                                      
+                            
+                            <entry key="searchDN" value="%%LDAP_DN_USER%%"/>
+                                                                      
+                            
+                            <entry key="searchScope" value="SUBTREE"/>
+                                                                    
+                        
+                        </Map>
+                                                          
+                    
+                    </List>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="skipBackslashInFilter" value="true"/>
+                              
+            
+            <entry key="sysDescriptions">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Map>
+                                                            
+                        
+                        <entry key="en_US"/>
+                                                          
+                    
+                    </Map>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="templateApplication" value="OpenLDAP Template"/>
+                              
+            
+            <entry key="useSSL">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="user" value="%%LDAP_USER%%"/>
+                            
+        
+        </Map>
+                  
+    
+    </Attributes>
+          
+    
+    <Owner>
+                    
+        
+        <Reference class="sailpoint.object.Identity" name="spadmin"/>
+                  
+    
+    </Owner>
+          
+    
+    <ProvisioningForms>
+                    
+        
+        <Form name="account" objectType="account" type="Create">
+                              
+            
+            <Attributes>
+                                        
+                
+                <Map>
+                                                  
+                    
+                    <entry key="pageTitle" value="account"/>
+                                                
+                
+                </Map>
+                                      
+            
+            </Attributes>
+                              
+            
+            <Section>
+                                        
+                
+                <Field displayName="con_prov_policy_ldap_user_DN" helpKey="help_con_prov_policy_ldap_user_DN" name="dn" required="true" type="string"/>
+                                        
+                
+                <Field displayName="con_prov_policy_ldap_password" helpKey="help_con_prov_policy_ldap_password" name="password" required="true" type="secret"/>
+                                        
+                
+                <Field displayName="con_prov_policy_ldap_full_name" helpKey="help_con_prov_policy_ldap_full_name" name="cn" required="true" type="string"/>
+                                        
+                
+                <Field displayName="con_prov_policy_ldap_first_name" helpKey="help_con_prov_policy_ldap_first_name" name="givenName" reviewRequired="true" type="string"/>
+                                        
+                
+                <Field displayName="con_prov_policy_ldap_last_name" helpKey="help_con_prov_policy_ldap_last_name" name="sn" required="true" type="string"/>
+                                      
+            
+            </Section>
+                            
+        
+        </Form>
+                    
+        
+        <Form name="Create Group OpenLdap" objectType="group" type="Create">
+                              
+            
+            <Attributes>
+                                        
+                
+                <Map>
+                                                  
+                    
+                    <entry key="pageTitle" value="Create Group OpenLdap"/>
+                                                
+                
+                </Map>
+                                      
+            
+            </Attributes>
+                              
+            
+            <FormRef name="Create Group OpenLdap"/>
+                            
+        
+        </Form>
+                    
+        
+        <Form name="Update Group OpenLdap" objectType="group" type="Update">
+                              
+            
+            <Attributes>
+                                        
+                
+                <Map>
+                                                  
+                    
+                    <entry key="pageTitle" value="Update Group OpenLdap"/>
+                                                
+                
+                </Map>
+                                      
+            
+            </Attributes>
+                              
+            
+            <FormRef name="Update Group OpenLdap"/>
+                            
+        
+        </Form>
+                  
+    
+    </ProvisioningForms>
+          
+    
+    <Schemas>
+                    
+        
+        <Schema displayAttribute="cn" identityAttribute="dn" instanceAttribute="" nativeObjectType="inetOrgPerson" objectType="account">
+                              
+            
+            <AttributeDefinition name="businessCategory" type="string">
+                                        
+                
+                <Description>business category</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition multi="true" name="carLicense" type="string">
+                                        
+                
+                <Description>vehicle license or registration plate</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="cn" type="string">
+                                        
+                
+                <Description>common name(s) for which the entity is known by</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="dn" type="string">
+                                        
+                
+                <Description>distinguished name for which the entity is known by</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="departmentNumber" type="string">
+                                        
+                
+                <Description>identifies a department within an organization</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="description" type="string">
+                                        
+                
+                <Description>descriptive information</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="destinationIndicator" type="string">
+                                        
+                
+                <Description>destination indicator</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="displayName" type="string">
+                                        
+                
+                <Description>preferred name to be used when displaying entries</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="employeeNumber" type="string">
+                                        
+                
+                <Description>numerically identifies an employee within an organization</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="employeeType" type="string">
+                                        
+                
+                <Description>type of employment for a person</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition multi="true" name="facsimileTelephoneNumber" type="string">
+                                        
+                
+                <Description>Facsimile (Fax) Telephone Number</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="givenName" type="string">
+                                        
+                
+                <Description>first name(s) for which the entity is known by</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition entitlement="true" managed="true" multi="true" name="groups" schemaObjectType="group" type="string">
+                                        
+                
+                <Description>List of groups a user is a member</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition entitlement="true" managed="true" multi="true" name="posixgroups" schemaObjectType="posixgroup" type="string">
+                                        
+                
+                <Description>List of posix groups a user is a member</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition entitlement="true" managed="true" multi="true" name="nisNetgroups" schemaObjectType="nisNetgroup" type="string">
+                                        
+                
+                <Description>List of nisnet groups a user is a member</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="homePhone" type="string">
+                                        
+                
+                <Description>home telephone number</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="homePostalAddress" type="string">
+                                        
+                
+                <Description>home postal address</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="initials" type="string">
+                                        
+                
+                <Description>initials of some or all of names, but not the surname(s).</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="internationaliSDNNumber" type="string">
+                                        
+                
+                <Description>international ISDN number</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="l" type="string">
+                                        
+                
+                <Description>city</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="mail" type="string">
+                                        
+                
+                <Description>RFC822 Mailbox</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="manager" type="string">
+                                        
+                
+                <Description>DN of manager</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="mobile" type="string">
+                                        
+                
+                <Description>mobile telephone number</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="o" type="string">
+                                        
+                
+                <Description>organization this object belongs to</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="ou" type="string">
+                                        
+                
+                <Description>organizational unit this object belongs to</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="pager" type="string">
+                                        
+                
+                <Description>pager telephone number</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="physicalDeliveryOfficeName" type="string">
+                                        
+                
+                <Description>Physical Delivery Office Name</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="postOfficeBox" type="string">
+                                        
+                
+                <Description>Post Office Box</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="postalAddress" type="string">
+                                        
+                
+                <Description>postal address</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="postalCode" type="string">
+                                        
+                
+                <Description>postal code</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="preferredDeliveryMethod" type="string">
+                                        
+                
+                <Description>preferred delivery method</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="preferredLanguage" type="string">
+                                        
+                
+                <Description>preferred written or spoken language for a person</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="pwdReset" type="string">
+                                        
+                
+                <Description>specifies whether the password has been reset by admin</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="registeredAddress" type="string">
+                                        
+                
+                <Description>registered postal address</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="roomNumber" type="string">
+                                        
+                
+                <Description>room number</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="secretary" type="string">
+                                        
+                
+                <Description>DN of secretary</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="seeAlso" type="string">
+                                        
+                
+                <Description>DN of related object</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="sn" type="string">
+                                        
+                
+                <Description>last (family) name(s) for which the entity is known by</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="st" type="string">
+                                        
+                
+                <Description>state or province which this object resides in</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="street" type="string">
+                                        
+                
+                <Description>street address of this object</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="telephoneNumber" type="string">
+                                        
+                
+                <Description>Telephone Number</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="teletexTerminalIdentifier" type="string">
+                                        
+                
+                <Description>Teletex Terminal Identifier</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="telexNumber" type="string">
+                                        
+                
+                <Description>Telex Number</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="title" type="string">
+                                        
+                
+                <Description>title associated with the entity</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="uid" type="string">
+                                        
+                
+                <Description>user identifier</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition multi="true" name="objectClass" type="string">
+                                        
+                
+                <Description>object classes of the entity</Description>
+                                      
+            
+            </AttributeDefinition>
+                            
+        
+        </Schema>
+                    
+        
+        <Schema aggregationType="alert" descriptionAttribute="" displayAttribute="cn" featuresString="PROVISIONING" identityAttribute="dn" instanceAttribute="" nativeObjectType="posixgroup" objectType="posixgroup">
+                              
+            
+            <AttributeDefinition name="cn" type="string">
+                                        
+                
+                <Description>common name(s) for which the entity is known by</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition multi="true" name="memberUid" type="string">
+                                        
+                
+                <Description>unique member of a posixGroup</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="dn" type="string">
+                                        
+                
+                <Description>Directory Path</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="gidNumber" type="string">
+                                        
+                
+                <Description>Group ID</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="description" type="string">
+                                        
+                
+                <Description>descriptive information</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <Attributes>
+                                        
+                
+                <Map>
+                                                  
+                    
+                    <entry key="groupMemberAttribute" value="memberUid"/>
+                                                  
+                    
+                    <entry key="memberAttribute">
+                                                            
+                        
+                        <value>
+                                                                      
+                            
+                            <List>
+                                                                                
+                                
+                                <String>cn</String>
+                                                                                
+                                
+                                <String>uid</String>
+                                                                              
+                            
+                            </List>
+                                                                    
+                        
+                        </value>
+                                                          
+                    
+                    </entry>
+                                                
+                
+                </Map>
+                                      
+            
+            </Attributes>
+                            
+        
+        </Schema>
+                    
+        
+        <Schema aggregationType="alert" descriptionAttribute="" displayAttribute="cn" featuresString="PROVISIONING" identityAttribute="dn" instanceAttribute="" nativeObjectType="nisNetgroup" objectType="nisNetgroup">
+                              
+            
+            <AttributeDefinition name="cn" type="string">
+                                        
+                
+                <Description>common name(s) for which the entity is known by</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition multi="true" name="nisNetgroupTriple" type="string">
+                                        
+                
+                <Description>unique member of a nisNetgroup</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="dn" type="string">
+                                        
+                
+                <Description>Directory Path</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="description" type="string">
+                                        
+                
+                <Description>descriptive information</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <Attributes>
+                                        
+                
+                <Map>
+                                                  
+                    
+                    <entry key="groupMemberAttribute" value="nisNetgroupTriple"/>
+                                                  
+                    
+                    <entry key="memberAttribute">
+                                                            
+                        
+                        <value>
+                                                                      
+                            
+                            <List>
+                                                                                
+                                
+                                <String>cn</String>
+                                                                                
+                                
+                                <String>uid</String>
+                                                                              
+                            
+                            </List>
+                                                                    
+                        
+                        </value>
+                                                          
+                    
+                    </entry>
+                                                  
+                    
+                    <entry key="memberPrefix" value="{,"/>
+                                                  
+                    
+                    <entry key="memberSuffix" value=",}"/>
+                                                
+                
+                </Map>
+                                      
+            
+            </Attributes>
+                            
+        
+        </Schema>
+                    
+        
+        <Schema descriptionAttribute="description" displayAttribute="cn" featuresString="PROVISIONING" identityAttribute="dn" instanceAttribute="" nativeObjectType="groupOfUniqueNames" objectType="group">
+                              
+            
+            <AttributeDefinition name="cn" type="string">
+                                        
+                
+                <Description>common name(s) for which the entity is known by</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="dn" type="string">
+                                        
+                
+                <Description>Directory Path</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="o" type="string">
+                                        
+                
+                <Description>organization this object belongs to</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="ou" type="string">
+                                        
+                
+                <Description>organizational unit this object belongs to</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="owner" type="string">
+                                        
+                
+                <Description>owner (of the object)</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="description" type="string">
+                                        
+                
+                <Description>descriptive information</Description>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition multi="true" name="objectClass" type="string"/>
+                              
+            
+            <AttributeDefinition multi="true" name="uniqueMember" type="string"/>
+                              
+            
+            <Attributes>
+                                        
+                
+                <Map>
+                                                  
+                    
+                    <entry key="groupMemberAttribute" value="uniqueMember"/>
+                                                  
+                    
+                    <entry key="memberAttribute" value="dn"/>
+                                                
+                
+                </Map>
+                                      
+            
+            </Attributes>
+                            
+        
+        </Schema>
+                  
+    
+    </Schemas>
+          
+    
+    <ApplicationScorecard/>
+        
+
+</Application>

@@ -1,0 +1,102 @@
+employeeID;name;firstname;lastname;email;departmentName;departmentCode;manager;employeeStatus
+00000000;Luis Fernando Padovani;Luis;Padovani;luis.padovani@company.com;CEO;00000;;true
+00000001;Cecile Serilda;Cecile;Serilda;Cecile.Serilda@company.com;Selling;00005;00000000;true
+00000002;Jerry Valerio;Jerry;Valerio;Jerry.Valerio@company.com;Marketing;00004;00000001;true
+00000003;Sonni Malanie;Sonni;Malanie;Sonni.Malanie@company.com;Marketing;00004;00000001;false
+00000004;Babita Sharl;Babita;Sharl;Babita.Sharl@company.com;Marketing;00004;00000001;true
+00000005;Nelle Ogren;Nelle;Ogren;Nelle.Ogren@company.com;Production;00001;00000001;true
+00000006;Blondelle Daveta;Blondelle;Daveta;Blondelle.Daveta@company.com;Human Resource Management;00006;00000001;true
+00000007;Vita Brunell;Vita;Brunell;Vita.Brunell@company.com;Purchasing;00003;00000001;true
+00000008;Ethel Anestassia;Ethel;Anestassia;Ethel.Anestassia@company.com;Selling;00005;00000001;true
+00000009;Almeta Hutchison;Almeta;Hutchison;Almeta.Hutchison@company.com;Developer;00002;00000001;true
+00000010;Jeanna Cherianne;Jeanna;Cherianne;Jeanna.Cherianne@company.com;Purchasing;00003;00000001;false
+00000011;Tabbatha Huggins;Tabbatha;Huggins;Tabbatha.Huggins@company.com;Accounting and Finance;00007;00000001;true
+00000012;Laurene McNully;Laurene;McNully;Laurene.McNully@company.com;Purchasing;00003;00000000;true
+00000013;Jillayne Mozelle;Jillayne;Mozelle;Jillayne.Mozelle@company.com;Human Resource Management;00006;00000001;true
+00000014;Jaime Narton;Jaime;Narton;Jaime.Narton@company.com;Marketing;00004;00000001;true
+00000015;Ronna Hollingsworth;Ronna;Hollingsworth;Ronna.Hollingsworth@company.com;Production;00001;00000012;false
+00000016;Emelina Solitta;Emelina;Solitta;Emelina.Solitta@company.com;Selling;00005;00000012;false
+00000017;Maye Vilma;Maye;Vilma;Maye.Vilma@company.com;Selling;00005;00000012;true
+00000018;Fayre Gilmour;Fayre;Gilmour;Fayre.Gilmour@company.com;Purchasing;00003;00000012;true
+00000019;Paulita Celestine;Paulita;Celestine;Paulita.Celestine@company.com;Purchasing;00003;00000012;true
+00000020;Sara-Ann Breed;Sara-Ann;Breed;Sara-Ann.Breed@company.com;Accounting and Finance;00007;00000012;true
+00000021;Margarette Simmonds;Margarette;Simmonds;Margarette.Simmonds@company.com;Accounting and Finance;00007;00000012;true
+00000022;Gilligan Lucienne;Gilligan;Lucienne;Gilligan.Lucienne@company.com;Selling;00005;00000012;true
+00000023;Ida Avi;Ida;Avi;Ida.Avi@company.com;Purchasing;00003;00000012;true
+00000024;Yvonne Lissi;Yvonne;Lissi;Yvonne.Lissi@company.com;Developer;00002;00000012;true
+00000025;Caressa My;Caressa;My;Caressa.My@company.com;Human Resource Management;00006;00000012;true
+00000026;Constance Eliathas;Constance;Eliathas;Constance.Eliathas@company.com;Purchasing;00003;00000012;true
+00000027;Susette Colyer;Susette;Colyer;Susette.Colyer@company.com;Marketing;00004;00000012;true
+00000028;Fredericka Myrilla;Fredericka;Myrilla;Fredericka.Myrilla@company.com;Human Resource Management;00006;00000012;true
+00000029;Elka Capello;Elka;Capello;Elka.Capello@company.com;Marketing;00004;00000012;true
+00000030;Pearline Odysseus;Pearline;Odysseus;Pearline.Odysseus@company.com;Production;00001;00000012;true
+00000031;Dorothy Brackely;Dorothy;Brackely;Dorothy.Brackely@company.com;Purchasing;00003;00000000;true
+00000032;Misha Meter;Misha;Meter;Misha.Meter@company.com;Marketing;00004;00000012;true
+00000033;Ann-Marie Chinua;Ann-Marie;Chinua;Ann-Marie.Chinua@company.com;Human Resource Management;00006;00000012;true
+00000034;Bibby Chick;Bibby;Chick;Bibby.Chick@company.com;Developer;00002;00000012;true
+00000035;Rebeca Carey;Rebeca;Carey;Rebeca.Carey@company.com;Selling;00005;00000012;true
+00000036;Suzette Bultman;Suzette;Bultman;Suzette.Bultman@company.com;Human Resource Management;00006;00000012;true
+00000037;Peri Irmine;Peri;Irmine;Peri.Irmine@company.com;Purchasing;00003;00000012;true
+00000038;Tierney Amadas;Tierney;Amadas;Tierney.Amadas@company.com;Production;00001;00000012;true
+00000039;Deane Brady;Deane;Brady;Deane.Brady@company.com;Selling;00005;00000012;true
+00000040;Lonnie Bluh;Lonnie;Bluh;Lonnie.Bluh@company.com;Purchasing;00003;00000012;true
+00000041;Kittie McAdams;Kittie;McAdams;Kittie.McAdams@company.com;Developer;00002;00000012;true
+00000042;Wileen Loring;Wileen;Loring;Wileen.Loring@company.com;Production;00001;00000012;true
+00000043;Alexine Breed;Alexine;Breed;Alexine.Breed@company.com;Marketing;00004;00000000;true
+00000044;Alleen Sundin;Alleen;Sundin;Alleen.Sundin@company.com;Purchasing;00003;00000042;true
+00000045;Jolyn Naor;Jolyn;Naor;Jolyn.Naor@company.com;Purchasing;00003;00000042;true
+00000046;Jeanna Jacqui;Jeanna;Jacqui;Jeanna.Jacqui@company.com;Marketing;00004;00000042;true
+00000047;Justinn Persse;Justinn;Persse;Justinn.Persse@company.com;Developer;00002;00000042;true
+00000048;Belva Trey;Belva;Trey;Belva.Trey@company.com;Purchasing;00003;00000042;true
+00000049;Theodora Mandler;Theodora;Mandler;Theodora.Mandler@company.com;Developer;00002;00000042;true
+00000050;Judy Gino;Judy;Gino;Judy.Gino@company.com;Purchasing;00003;00000042;true
+00000051;Eadie Schenck;Eadie;Schenck;Eadie.Schenck@company.com;Human Resource Management;00006;00000042;false
+00000052;Cyndie Mallon;Cyndie;Mallon;Cyndie.Mallon@company.com;Marketing;00004;00000042;true
+00000053;Fawne Taam;Fawne;Taam;Fawne.Taam@company.com;Marketing;00004;00000042;true
+00000054;Etta Robertson;Etta;Robertson;Etta.Robertson@company.com;Marketing;00004;00000042;true
+00000055;Hollie Oneida;Hollie;Oneida;Hollie.Oneida@company.com;Selling;00005;00000031;true
+00000056;Bettine Remmer;Bettine;Remmer;Bettine.Remmer@company.com;Marketing;00004;00000031;true
+00000057;Goldie Salchunas;Goldie;Salchunas;Goldie.Salchunas@company.com;Production;00001;00000031;true
+00000058;Marti Mayeda;Marti;Mayeda;Marti.Mayeda@company.com;Accounting and Finance;00007;00000031;true
+00000059;Odessa Evangelia;Odessa;Evangelia;Odessa.Evangelia@company.com;Human Resource Management;00006;00000031;true
+00000060;Juliane Hermes;Juliane;Hermes;Juliane.Hermes@company.com;Marketing;00004;00000031;true
+00000061;Audrie Zrike;Audrie;Zrike;Audrie.Zrike@company.com;Developer;00002;00000031;true
+00000062;Rani Sperling;Rani;Sperling;Rani.Sperling@company.com;Selling;00005;00000031;true
+00000063;Jemie Longfellow;Jemie;Longfellow;Jemie.Longfellow@company.com;Selling;00005;00000031;true
+00000064;Perry Cohdwell;Perry;Cohdwell;Perry.Cohdwell@company.com;Human Resource Management;00006;00000031;true
+00000065;Tonia Croix;Tonia;Croix;Tonia.Croix@company.com;Developer;00002;00000031;true
+00000066;Rosanne Lubin;Rosanne;Lubin;Rosanne.Lubin@company.com;Human Resource Management;00006;00000031;true
+00000067;Carmencita Terencio;Carmencita;Terencio;Carmencita.Terencio@company.com;Production;00001;00000031;true
+00000068;Melodie Tatianas;Melodie;Tatianas;Melodie.Tatianas@company.com;Marketing;00004;00000031;true
+00000069;Brena Erich;Brena;Erich;Brena.Erich@company.com;Developer;00002;00000031;true
+00000070;Daune Thar;Daune;Thar;Daune.Thar@company.com;Purchasing;00003;00000031;false
+00000071;Dale Harriman;Dale;Harriman;Dale.Harriman@company.com;Selling;00005;00000031;true
+00000072;Marcelline Henrie;Marcelline;Henrie;Marcelline.Henrie@company.com;Accounting and Finance;00007;00000031;true
+00000073;Harrietta Voletta;Harrietta;Voletta;Harrietta.Voletta@company.com;Marketing;00004;00000031;true
+00000074;Lynea Tacye;Lynea;Tacye;Lynea.Tacye@company.com;Accounting and Finance;00007;00000031;true
+00000075;Fidelia Elsinore;Fidelia;Elsinore;Fidelia.Elsinore@company.com;Production;00001;00000031;true
+00000076;Joeann Ellerey;Joeann;Ellerey;Joeann.Ellerey@company.com;Purchasing;00003;00000031;true
+00000077;Almeta Sancho;Almeta;Sancho;Almeta.Sancho@company.com;Human Resource Management;00006;00000031;true
+00000078;Clarice Latini;Clarice;Latini;Clarice.Latini@company.com;Accounting and Finance;00007;00000031;true
+00000079;Kristina Papageno;Kristina;Papageno;Kristina.Papageno@company.com;Human Resource Management;00006;00000031;true
+00000080;Carolina Shuler;Carolina;Shuler;Carolina.Shuler@company.com;Accounting and Finance;00007;00000000;true
+00000081;Cyb Adore;Cyb;Adore;Cyb.Adore@company.com;Marketing;00004;00000031;true
+00000082;Bernardine Stuart;Bernardine;Stuart;Bernardine.Stuart@company.com;Human Resource Management;00006;00000031;true
+00000083;Annaliese Shanley;Annaliese;Shanley;Annaliese.Shanley@company.com;Production;00001;00000031;true
+00000084;Odessa Tamar;Odessa;Tamar;Odessa.Tamar@company.com;Developer;00002;00000031;true
+00000085;Kamilah Teddman;Kamilah;Teddman;Kamilah.Teddman@company.com;Accounting and Finance;00007;00000031;true
+00000086;Sashenka Huggins;Sashenka;Huggins;Sashenka.Huggins@company.com;Accounting and Finance;00007;00000031;true
+00000087;Daryl Brian;Daryl;Brian;Daryl.Brian@company.com;Marketing;00004;00000031;true
+00000088;Lindie Morgun;Lindie;Morgun;Lindie.Morgun@company.com;Purchasing;00003;00000031;true
+00000089;Leeanne Shaver;Leeanne;Shaver;Leeanne.Shaver@company.com;Human Resource Management;00006;00000031;true
+00000090;Leeanne Phi;Leeanne;Phi;Leeanne.Phi@company.com;Marketing;00004;00000080;true
+00000091;Pierette Teryn;Pierette;Teryn;Pierette.Teryn@company.com;Developer;00002;00000080;true
+00000092;Maisey Middleton;Maisey;Middleton;Maisey.Middleton@company.com;Production;00001;00000080;true
+00000093;Joelly Bryna;Joelly;Bryna;Joelly.Bryna@company.com;Human Resource Management;00006;00000080;true
+00000094;Ardys Wittie;Ardys;Wittie;Ardys.Wittie@company.com;Selling;00005;00000080;true
+00000095;Margarette Baptlsta;Margarette;Baptlsta;Margarette.Baptlsta@company.com;Marketing;00004;00000080;true
+00000096;Daryl Valoniah;Daryl;Valoniah;Daryl.Valoniah@company.com;Purchasing;00003;00000080;true
+00000097;Marsiella Franza;Marsiella;Franza;Marsiella.Franza@company.com;Marketing;00004;00000080;true
+00000098;Lucy Burch;Lucy;Burch;Lucy.Burch@company.com;Developer;00002;00000080;false
+00000099;Moyna Mott;Moyna;Mott;Moyna.Mott@company.com;Human Resource Management;00006;00000080;true
+00000100;Amelia Nore;Amelia;Nore;Amelia.Nore@company.com;Developer;00002;00000080;true

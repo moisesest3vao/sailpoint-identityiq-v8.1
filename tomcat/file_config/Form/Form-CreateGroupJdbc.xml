@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Form PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Form name="Create Group JDBC" type="Application">
+          
+    
+    <Attributes>
+                    
+        
+        <Map>
+                              
+            
+            <entry key="includeHiddenFields" value="true"/>
+                              
+            
+            <entry key="pageTitle" value="Create Group JDBC"/>
+                            
+        
+        </Map>
+                  
+    
+    </Attributes>
+          
+    
+    <Description/>
+          
+    
+    <Section name="Section 1">
+                    
+        
+        <Field authoritative="true" displayName="Name" name="name" required="true" reviewRequired="true" type="string"/>
+                    
+        
+        <Field authoritative="true" displayName="Description" name="description" required="true" type="string"/>
+                  
+    
+    </Section>
+        
+
+</Form>

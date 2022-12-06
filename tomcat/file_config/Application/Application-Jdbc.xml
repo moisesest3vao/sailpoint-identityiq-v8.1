@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Application PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Application connector="sailpoint.connector.JDBCConnector" featuresString="DISCOVER_SCHEMA, PROVISIONING, SYNC_PROVISIONING, DIRECT_PERMISSIONS, SEARCH, ENABLE, UNLOCK" icon="databaseIcon" name="JDBC" profileClass="" type="JDBC">
+          
+    
+    <AccountCorrelationConfig>
+                    
+        
+        <Reference class="sailpoint.object.CorrelationConfig" name="JDBC Employee"/>
+                  
+    
+    </AccountCorrelationConfig>
+          
+    
+    <Attributes>
+                    
+        
+        <Map>
+                              
+            
+            <entry key="SQL" value="exec GET_ALL_USER"/>
+                              
+            
+            <entry key="acctAggregationEnd">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Date>1618838325501</Date>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="acctAggregationStart">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Date>1618838325235</Date>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="afterProvisioningRule"/>
+                              
+            
+            <entry key="aggregationMode">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="beforeProvisioningRule"/>
+
+      <entry key="buildMapRule" value="JDBC BuildMap"/>               
+            
+            <entry key="compositeDefinition"/>
+                              
+            
+            <entry key="deltaTable"/>
+                              
+            
+            <entry key="driverClass" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+                              
+            
+            <entry key="getDeltaSQL"/>
+                              
+            
+            <entry key="getObjectSQL" value="exec GET_BY_USER '$(identity)'"/>
+                              
+            
+            <entry key="group.SQL" value="exec GET_ALL_GROUP"/>
+                              
+            
+            <entry key="group.aggregationMode">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="group.deltaTable"/>
+                              
+            
+            <entry key="group.driverClass" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+                              
+            
+            <entry key="group.getDeltaSQL"/>
+                              
+            
+            <entry key="group.getObjectSQL" value="exec GET_BY_GROUP '$(identity)'"/>
+                              
+            
+            <entry key="group.isPermissionEnabled">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="group.mergeRows">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="group.password" value="%%JDBC_PASSWORD%%"/>
+                              
+            
+            <entry key="group.url" value="%%JDBC_URL%%"/>
+                              
+            
+            <entry key="group.useExecuteQuery">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="group.useStoredProcedureDelta">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="group.useStoredProcedureDirectPermission">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="group.useStoredProcedureGetObject">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean>true</Boolean>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="group.useStoredProcedureSqlStmt">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean>true</Boolean>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="group.user" value="appMock"/>
+                              
+            
+            <entry key="isPermissionEnabled">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+      <entry key="jdbcCreateProvisioningRule" value="JDBC Create Provision"/>
+      <entry key="jdbcDeleteProvisioningRule" value="JDBC Delete Provision"/>
+      <entry key="jdbcDisableProvisioningRule" value="JDBC Disable Provision"/>
+      <entry key="jdbcEnableProvisioningRule" value="JDBC Enable Provision"/>
+                              
+            
+            <entry key="jdbcExceptionBucketing">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean>true</Boolean>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="jdbcModifyProvisioningRule" value="JDBC Update Provision"/>
+                              
+            
+            <entry key="mergeRows">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="nativeChangeDetectionAttributeScope" value="entitlements"/>
+                              
+            
+            <entry key="nativeChangeDetectionAttributes"/>
+                              
+            
+            <entry key="nativeChangeDetectionEnabled">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="nativeChangeDetectionOperations"/>
+                              
+            
+            <entry key="partitionMode">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="partitionStatements"/>
+                              
+            
+            <entry key="password" value="%%JDBC_PASSWORD%%"/>
+                              
+            
+            <entry key="provisionRule" value="operationRule"/>
+                              
+            
+            <entry key="sysDescriptions">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Map>
+                                                            
+                        
+                        <entry key="en_US"/>
+                                                          
+                    
+                    </Map>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="templateApplication" value="JDBC Template"/>
+                              
+            
+            <entry key="testConnSQL" value="Select 1"/>
+                              
+            
+            <entry key="url" value="%%JDBC_URL%%"/>
+                              
+            
+            <entry key="useExecuteQuery">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="useStoredProcedureDelta">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="useStoredProcedureDirectPermission">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="useStoredProcedureGetObject">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean>true</Boolean>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="useStoredProcedurePartition">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="useStoredProcedureSqlStmt">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean>true</Boolean>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="useStoredProcedureTestConn">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="user" value="appMock"/>
+                            
+        
+        </Map>
+                  
+    
+    </Attributes>
+          
+    
+    <Owner>
+                    
+        
+        <Reference class="sailpoint.object.Identity" name="spadmin"/>
+                  
+    
+    </Owner>
+          
+    
+    <ProvisioningForms>
+                    
+        
+        <Form name="Create Account JDBC" objectType="account" type="Create">
+                              
+            
+            <Attributes>
+                                        
+                
+                <Map>
+                                                  
+                    
+                    <entry key="pageTitle" value="Create Account JDBC"/>
+                                                
+                
+                </Map>
+                                      
+            
+            </Attributes>
+                              
+            
+            <FormRef name="Create Account JDBC"/>
+                            
+        
+        </Form>
+                    
+        
+        <Form name="Update Account JDBC" objectType="account" type="Update">
+                              
+            
+            <Attributes>
+                                        
+                
+                <Map>
+                                                  
+                    
+                    <entry key="pageTitle" value="Update Account JDBC"/>
+                                                
+                
+                </Map>
+                                      
+            
+            </Attributes>
+                              
+            
+            <FormRef name="Update Account JDBC"/>
+                            
+        
+        </Form>
+                    
+        
+        <Form name="Create Group JDBC" objectType="group" type="Create">
+                              
+            
+            <Attributes>
+                                        
+                
+                <Map>
+                                                  
+                    
+                    <entry key="includeHiddenFields" value="true"/>
+                                                  
+                    
+                    <entry key="pageTitle" value="Create Group JDBC"/>
+                                                
+                
+                </Map>
+                                      
+            
+            </Attributes>
+                              
+            
+            <FormRef name="Create Group JDBC"/>
+                            
+        
+        </Form>
+                    
+        
+        <Form name="Update Group JDBC" objectType="group" type="Update">
+                              
+            
+            <Attributes>
+                                        
+                
+                <Map>
+                                                  
+                    
+                    <entry key="pageTitle" value="Update Group JDBC"/>
+                                                
+                
+                </Map>
+                                      
+            
+            </Attributes>
+                              
+            
+            <FormRef name="Update Group JDBC"/>
+                            
+        
+        </Form>
+                    
+        
+        <Form objectType="account" type="Delete">
+                              
+            
+            <Attributes>
+                                        
+                
+                <Map>
+                                                  
+                    
+                    <entry key="pageTitle"/>
+                                                
+                
+                </Map>
+                                      
+            
+            </Attributes>
+                            
+        
+        </Form>
+                  
+    
+    </ProvisioningForms>
+          
+    
+    <Schemas>
+                    
+        
+        <Schema displayAttribute="name" identityAttribute="login" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None">
+                              
+            
+            <AttributeDefinition name="name" type="string">
+                                        
+                
+                <Description/>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="login" type="string">
+                                        
+                
+                <Description/>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="status" type="string">
+                                        
+                
+                <Description/>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition entitlement="true" managed="true" multi="true" name="profile" schemaObjectType="group" type="string">
+                                        
+                
+                <Description/>
+                                      
+            
+            </AttributeDefinition>
+                            
+        
+        </Schema>
+                    
+        
+        <Schema descriptionAttribute="description" displayAttribute="name" featuresString="PROVISIONING" identityAttribute="name" instanceAttribute="" nativeObjectType="group" objectType="group" permissionsRemediationModificationType="None">
+                              
+            
+            <AttributeDefinition name="name" type="string">
+                                        
+                
+                <Description/>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="description" type="string">
+                                        
+                
+                <Description/>
+                                      
+            
+            </AttributeDefinition>
+                              
+            
+            <AttributeDefinition name="status" type="string">
+                                        
+                
+                <Description/>
+                                      
+            
+            </AttributeDefinition>
+                            
+        
+        </Schema>
+                  
+    
+    </Schemas>
+          
+    
+    <ApplicationScorecard/>
+        
+
+</Application>

@@ -1,0 +1,69 @@
+version: '2.3'
+services:
+    server_smtp:
+        container_name: server_email
+        image: mailhog/mailhog
+        ports: 
+            - 1025:1025
+            - 8025:8025
+  #      networks:
+  #          rede_iiq:
+  #              ipv4_address: 10.5.0.5
+    server_ldad:
+        container_name: ad_app_mock
+        command: [--copy-service]
+        image: osixia/openldap:1.5.0
+        environment:
+            LDAP_ADMIN_PASSWORD: ${LDAP_ADMIN_PASSWORD}
+            LDAP_BASE_DN: ${LDAP_BASE_DN}
+            LDAP_ORGANISATION: ${LDAP_ORGANISATION}
+            LDAP_DOMAIN: ${LDAP_DOMAIN}
+        volumes: 
+            - ${LDAP_DATA_SCHEMA}:/container/service/slapd/assets/config/bootstrap/schema/attributes.schema
+            - ${LDAP_DATA}:/container/service/slapd/assets/config/bootstrap/ldif/custom/adata.ldif         
+        ports:
+            - 389:389
+            - 636:636
+    #    networks:
+    #        rede_iiq:
+    #            ipv4_address: 10.5.0.4                       
+    server_db:
+        container_name: server_bd_sql
+        build: 
+            context: ./sqlserver_iiq
+        restart: always
+        ports: 
+            - 1433:1433
+    #    networks:
+    #        rede_iiq:
+    #            ipv4_address: 10.5.0.3         
+        command: 
+            bash -c "sh -x /tmp/entrypoint.sh"
+        healthcheck:
+            test: [ "CMD","/opt/mssql-tools/bin/sqlcmd", "-S" , "localhost", "-U", "healthcheck", "-P", "Change@123", "-Q", "SELECT 1" ]
+            timeout: 10s
+            retries: 20    
+    server_web_iiq:
+        container_name: web_iiq
+        build: ./tomcat
+        restart: always
+        ports: 
+            - 8080:8080
+            - 9009:9009
+   #     networks:
+   #         rede_iiq:
+   #             ipv4_address: 10.5.0.2           
+        command: 
+            bash -c "sh -x /tmp/entrypoint.sh"
+        depends_on: 
+            server_db:
+                condition: service_healthy
+        volumes:
+            - ${DIRECTORY_TOMCAT_APPLICATION}:/opt/file/
+# networks:
+#  rede_iiq:
+#    driver: bridge
+#    ipam:
+#     config:
+#       - subnet: 10.5.0.0/16
+#         gateway: 10.5.0.1

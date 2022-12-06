@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Form PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Form name="Create Account JDBC" type="Application">
+          
+    
+    <Attributes>
+                    
+        
+        <Map>
+                              
+            
+            <entry key="pageTitle" value="Create Account JDBC"/>
+                            
+        
+        </Map>
+                  
+    
+    </Attributes>
+          
+    
+    <Description/>
+          
+    
+    <Section name="Section 1">
+                    
+        
+        <Field authoritative="true" displayName="Name" name="name" required="true" type="string">
+                              
+            
+            <RuleRef>
+                                        
+                
+                <Reference class="sailpoint.object.Rule" name="Identity Get Full Name"/>
+                                      
+            
+            </RuleRef>
+                            
+        
+        </Field>
+                    
+        
+        <Field authoritative="true" displayName="Login" name="login" required="true" type="string">
+                              
+            
+            <RuleRef>
+                                        
+                
+                <Reference class="sailpoint.object.Rule" name="Identity Get Employee"/>
+                                      
+            
+            </RuleRef>
+                            
+        
+        </Field>
+                  
+    
+    </Section>
+        
+
+</Form>

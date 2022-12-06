@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Rule language="beanshell" name="Rule Library Get Attributes Request">
+          
+    
+    <Source>
+                
+        <![CDATA[
+  
+  
+import sailpoint.object.ProvisioningPlan.AbstractRequest;  
+import sailpoint.object.ProvisioningPlan.AttributeRequest;    
+  
+String getBolleanValue(String attribute, AbstractRequest request){
+  	AttributeRequest attr = request.getAttributeRequest(attribute);
+  	if(attr!=null){
+  		return ((Boolean)attr.getValue()).toString();
+  	}else{
+  		return null;
+  	}
+  }
+  
+ String getValue(String attribute, AbstractRequest request){
+  	AttributeRequest attr = request.getAttributeRequest(attribute);
+  	if(attr!=null){
+  		if(attr.getValue() instanceof String){
+  			return (String)attr.getValue().toString();
+  		}else if(attr.getValue() instanceof List){
+  			return String.join(",",(List)attr.getValue());
+  		}
+  	}else{
+  		return null;
+  	}
+  }
+  
+  ]]>
+            
+    </Source>
+        
+
+</Rule>

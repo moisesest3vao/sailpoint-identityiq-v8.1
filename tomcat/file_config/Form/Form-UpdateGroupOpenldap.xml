@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Form PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Form name="Update Group OpenLdap" type="Application">
+          
+    
+    <Attributes>
+                    
+        
+        <Map>
+                              
+            
+            <entry key="pageTitle" value="OpenLdap Update Group"/>
+                            
+        
+        </Map>
+                  
+    
+    </Attributes>
+          
+    
+    <Section>
+                    
+        
+        <Field displayName="con_prov_policy_ldap_description" name="description" reviewRequired="true" type="string"/>
+                  
+    
+    </Section>
+        
+
+</Form>

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sailpoint PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<sailpoint>
+  <ImportAction name="merge">
+ 
+ 
+<ObjectConfig name="Identity">
+    <ObjectAttribute displayName="att_email" editMode="ReadOnly" name="email" standard="true" type="string">
+        <AttributeSource name="AppRule: Human Resources Email Human Resources">
+            <ApplicationRef>
+                <Reference class="sailpoint.object.Application" name="Human Resources"/>
+            </ApplicationRef>
+            <RuleRef>
+                <Reference class="sailpoint.object.Rule" name="Human Resources Email"/>
+            </RuleRef>
+        </AttributeSource>
+    </ObjectAttribute>
+    <ObjectAttribute displayName="att_manager" editMode="ReadOnly" groupFactory="true" name="manager" standard="true" type="sailpoint.object.Identity">
+        <AttributeSource name="AppRule: Human Resources Manager Human Resources">
+            <ApplicationRef>
+                <Reference class="sailpoint.object.Application" name="Human Resources"/>
+            </ApplicationRef>
+            <RuleRef>
+                <Reference class="sailpoint.object.Rule" name="Human Resources Manager"/>
+            </RuleRef>
+        </AttributeSource>
+    </ObjectAttribute>
+    <ObjectAttribute displayName="att_inactive" editMode="ReadOnly" name="inactive" standard="true" type="boolean">
+        <AttributeSource name="AppRule: Human Resources Status Human Resources">
+            <ApplicationRef>
+                <Reference class="sailpoint.object.Application" name="Human Resources"/>
+            </ApplicationRef>
+            <RuleRef>
+                <Reference class="sailpoint.object.Rule" name="Human Resources Status"/>
+            </RuleRef>
+        </AttributeSource>
+    </ObjectAttribute>
+    <ObjectAttribute displayName="att_display_name" editMode="ReadOnly" name="displayName" standard="true" type="string">
+        <AttributeSource name="AppRule: Human Resources Name Human Resources">
+            <ApplicationRef>
+                <Reference class="sailpoint.object.Application" name="Human Resources"/>
+            </ApplicationRef>
+            <RuleRef>
+                <Reference class="sailpoint.object.Rule" name="Human Resources Name"/>
+            </RuleRef>
+        </AttributeSource>
+    </ObjectAttribute>
+    <ObjectAttribute displayName="att_first_name" editMode="ReadOnly" name="firstname" standard="true" type="string">
+        <AttributeSource name="AppRule: Human Resources First Name Human Resources">
+            <ApplicationRef>
+                <Reference class="sailpoint.object.Application" name="Human Resources"/>
+            </ApplicationRef>
+            <RuleRef>
+                <Reference class="sailpoint.object.Rule" name="Human Resources First Name"/>
+            </RuleRef>
+        </AttributeSource>
+    </ObjectAttribute>
+    <ObjectAttribute displayName="att_last_name" editMode="ReadOnly" name="lastname" standard="true" type="string">
+        <AttributeSource name="AppRule: Human Resources Last Name Human Resources">
+            <ApplicationRef>
+                <Reference class="sailpoint.object.Application" name="Human Resources"/>
+            </ApplicationRef>
+            <RuleRef>
+                <Reference class="sailpoint.object.Rule" name="Human Resources Last Name"/>
+            </RuleRef>
+        </AttributeSource>
+    </ObjectAttribute>
+    <ObjectAttribute displayName="att_identity_type" editMode="ReadOnly" name="type" standard="true" type="string">
+        <AttributeSource name="AppRule: Human Resources Type Human Resources">
+            <ApplicationRef>
+                <Reference class="sailpoint.object.Application" name="Human Resources"/>      
+            </ApplicationRef>
+            <RuleRef>      
+                <Reference class="sailpoint.object.Rule" name="Human Resources Type"/>
+            </RuleRef>
+        </AttributeSource>
+    </ObjectAttribute>
+</ObjectConfig>
+ 
+  </ImportAction>
+ </sailpoint>
+ 

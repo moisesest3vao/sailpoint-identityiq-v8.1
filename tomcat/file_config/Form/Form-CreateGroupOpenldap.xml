@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Form PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Form name="Create Group OpenLdap" type="Application">
+          
+    
+    <Attributes>
+                    
+        
+        <Map>
+                              
+            
+            <entry key="pageTitle" value="Create Group OpenLdap"/>
+                            
+        
+        </Map>
+                  
+    
+    </Attributes>
+          
+    
+    <Section>
+                    
+        
+        <Field displayName="Nome Grupo" displayOnly="true" name="cn" postBack="true" required="true" type="string"/>
+                    
+        
+        <Field displayName="con_prov_policy_ldap_group_DN" dynamic="true" helpKey="help_con_prov_policy_ldap_group_DN" name="dn" required="true" reviewRequired="true" type="string">
+                              
+            
+            <Attributes>
+                                        
+                
+                <Map>
+                                                  
+                    
+                    <entry key="readOnly" value="true"/>
+                                                
+                
+                </Map>
+                                      
+            
+            </Attributes>
+                              
+            
+            <RuleRef>
+                                        
+                
+                <Reference class="sailpoint.object.Rule" name="OpenLDAP Set Group DN"/>
+                                      
+            
+            </RuleRef>
+                            
+        
+        </Field>
+                    
+        
+        <Field displayName="con_prov_policy_ldap_description" helpKey="help_con_prov_policy_ldap_description" name="description" reviewRequired="true" type="string"/>
+                    
+        
+        <Field displayName="con_prov_policy_ldap_member" helpKey="help_con_prov_policy_ldap_member" name="uniqueMember" required="true" reviewRequired="true" type="string">
+                              
+            
+            <Attributes>
+                                        
+                
+                <Map>
+                                                  
+                    
+                    <entry key="readOnly" value="true"/>
+                                                
+                
+                </Map>
+                                      
+            
+            </Attributes>
+                              
+            
+            <Script>
+                                        
+                
+                <Source>
+                                        
+                    <![CDATA[
+                                        
+                    return "cn=00000000,ou=Users,dc=corp1";                                               
+                        
+                                    
+                ]]>
+                                    
+                </Source>
+                                      
+            
+            </Script>
+                            
+        
+        </Field>
+                  
+    
+    </Section>
+        
+
+</Form>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Rule language="beanshell" name="Identity Get Full Name" type="FieldValue">
+          
+    
+    <Description>This rule can be used to generate a field value (eg - an account name) using data from the given Identity. If this rule is run in the context of a workflow step then the arguments passed into the step will also be available. Also, any field values that have been processed so far from the policy related to the Application/Role will be available.</Description>
+          
+    
+    <Signature returnType="String"/>
+          
+    
+    <Source>
+                
+        <![CDATA[return identity.getFirstname() + " " + identity.getLastname();]]>
+            
+    </Source>
+        
+
+</Rule>

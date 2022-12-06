@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Form PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Form name="Create Account OpenLdap" type="Application">
+          
+    
+    <Attributes>
+                    
+        
+        <Map>
+                              
+            
+            <entry key="pageTitle" value="Create Account OpenLdap"/>
+                            
+        
+        </Map>
+                  
+    
+    </Attributes>
+          
+    
+    <Section>
+                    
+        
+        <Field displayName="con_prov_policy_ldap_user_DN" helpKey="help_con_prov_policy_ldap_user_DN" name="dn" required="true" type="string">
+                              
+            
+            <RuleRef>
+                                        
+                
+                <Reference class="sailpoint.object.Rule" name="OpenLDAP Set Account DN"/>
+                                      
+            
+            </RuleRef>
+                            
+        
+        </Field>
+                    
+        
+        <Field displayName="con_prov_policy_ldap_password" helpKey="help_con_prov_policy_ldap_password" name="password" required="true" type="secret" value="Change@123"/>
+                    
+        
+        <Field displayName="con_prov_policy_ldap_full_name" helpKey="help_con_prov_policy_ldap_full_name" name="cn" required="true" type="string">
+                              
+            
+            <RuleRef>
+                                        
+                
+                <Reference class="sailpoint.object.Rule" name="Identity Get Full Name"/>
+                                      
+            
+            </RuleRef>
+                            
+        
+        </Field>
+                    
+        
+        <Field displayName="con_prov_policy_ldap_first_name" helpKey="help_con_prov_policy_ldap_first_name" name="givenName" reviewRequired="true" type="string">
+                              
+            
+            <RuleRef>
+                                        
+                
+                <Reference class="sailpoint.object.Rule" name="Identity Get FirstName"/>
+                                      
+            
+            </RuleRef>
+                            
+        
+        </Field>
+                    
+        
+        <Field displayName="con_prov_policy_ldap_last_name" helpKey="help_con_prov_policy_ldap_last_name" name="sn" required="true" type="string">
+                              
+            
+            <RuleRef>
+                                        
+                
+                <Reference class="sailpoint.object.Rule" name="Identity Get LastName"/>
+                                      
+            
+            </RuleRef>
+                            
+        
+        </Field>
+                  
+    
+    </Section>
+        
+
+</Form>

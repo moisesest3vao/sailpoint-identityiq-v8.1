@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CorrelationConfig PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<CorrelationConfig name="OpenLDAP">
+          
+    
+    <AttributeAssignments>
+                    
+        
+        <Filter operation="EQ" property="name" value="cn"/>
+                  
+    
+    </AttributeAssignments>
+        
+
+</CorrelationConfig>

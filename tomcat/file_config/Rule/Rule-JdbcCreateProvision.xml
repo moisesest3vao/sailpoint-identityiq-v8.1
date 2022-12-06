@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Rule language="beanshell" name="JDBC Create Provision" type="JDBCOperationProvisioning">
+          
+    
+    <Description>
+     An example Provisioning rule for the JDBC Connector that
+     creates the Account(s) in the database.
+  </Description>
+          
+    
+    <ReferencedRules>
+                    
+        
+        <Reference class="sailpoint.object.Rule" name="Rule Library Get Attributes Request"/>
+                  
+    
+    </ReferencedRules>
+          
+    
+    <Signature>
+                    
+        
+        <Inputs>
+                              
+            
+            <Argument name="context">
+                                        
+                
+                <Description>
+          A sailpoint.api.SailPointContext object that can be used to
+          query the database to aid in provisioning.
+        </Description>
+                                      
+            
+            </Argument>
+                              
+            
+            <Argument name="application">
+                                        
+                
+                <Description>
+          The Application the account is being provisioned for.
+        </Description>
+                                      
+            
+            </Argument>
+                              
+            
+            <Argument name="schema">
+                                        
+                
+                <Description>
+          Schema representing the data being provisioned.
+        </Description>
+                                      
+            
+            </Argument>
+                              
+            
+            <Argument name="connection">
+                                        
+                
+                <Description>
+          Connection to the application database.
+        </Description>
+                                      
+            
+            </Argument>
+                              
+            
+            <Argument name="plan">
+                                        
+                
+                <Description>
+          The ProvisioningPlan created against the application.
+        </Description>
+                                      
+            
+            </Argument>
+                              
+            
+            <Argument name="log">
+                                        
+                
+                <Description>
+          log for debugging
+        </Description>
+                                      
+            
+            </Argument>
+                              
+            
+            <Argument name="request">
+                                        
+                
+                <Description>
+        request for specific operation
+        </Description>
+                                      
+            
+            </Argument>
+                            
+        
+        </Inputs>
+                  
+    
+    </Signature>
+          
+    
+    <Source>
+                
+        <![CDATA[                
+        
+    
+import java.sql.CallableStatement;
+    
+import sailpoint.object.ProvisioningResult;  
+import sailpoint.object.ProvisioningPlan.AbstractRequest;  
+import sailpoint.object.ProvisioningPlan.ObjectRequest;  
+import sailpoint.object.ProvisioningPlan.AccountRequest;  
+import sailpoint.object.ProvisioningPlan.AttributeRequest;    
+	
+
+ ProvisioningResult result = new ProvisioningResult();
+ 
+
+ CallableStatement stmt=null;
+  
+ if(request instanceof ObjectRequest){
+ 	ObjectRequest groupRequest = (ObjectRequest) request; 	
+	try{  
+	    stmt = connection.prepareCall("{CALL INSERT_GROUP(?,?)}");  
+	    stmt.setString(1,getValue("name",groupRequest));
+	    stmt.setString(2,getValue("description",groupRequest));
+		stmt.execute();
+	    result.setStatus(ProvisioningResult.STATUS_COMMITTED);
+	}
+	catch(Exception e){	
+	  	result.addError(e.getMessage());
+	    result.setStatus(ProvisioningResult.STATUS_FAILED);	
+	}
+	finally{
+		if(stmt != null){
+	   		 stmt.close();
+	   		 stmt = null;
+		}
+	}
+ }
+ else if(request instanceof AccountRequest){ 
+ 	AccountRequest accountRequest = (AccountRequest) request;
+ 	
+ 	Set<String> iiq_profile_set = new HashSet();
+ 	for(AttributeRequest attr : accountRequest.getAttributeRequests("profile")){
+ 		iiq_profile_set.add(attr.getValue().toString());
+ 	}
+ 	String group = String.join(",",iiq_profile_set);
+ 	
+ 	try{  
+ 	    stmt = connection.prepareCall("{CALL INSERT_USER(?,?,?)}");  
+	    stmt.setString(1,getValue("name",accountRequest));
+	    stmt.setString(2,request.getNativeIdentity());
+	    stmt.setString(3,group);
+		stmt.execute();
+	    result.setStatus(ProvisioningResult.STATUS_COMMITTED);  	
+	}
+	catch(Exception e){	
+	  	result.addError(e.getMessage());
+	    result.setStatus(ProvisioningResult.STATUS_FAILED);	
+	}
+	finally{
+		if(stmt != null){
+	   		 stmt.close();
+	   		 stmt = null;
+		}
+	}
+ }
+ 
+ return result;
+	
+  
+            
+    ]]>
+            
+    </Source>
+        
+
+</Rule>

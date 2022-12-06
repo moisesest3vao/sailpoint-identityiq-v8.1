@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Form PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Form name="Update Account JDBC" type="Application">
+          
+    
+    <Attributes>
+                    
+        
+        <Map>
+                              
+            
+            <entry key="pageTitle" value="Update Account JDBC"/>
+                            
+        
+        </Map>
+                  
+    
+    </Attributes>
+          
+    
+    <Description/>
+          
+    
+    <Section name="Section 1">
+                    
+        
+        <Field authoritative="true" displayName="Name" name="name" required="true" type="string">
+                              
+            
+            <RuleRef>
+                                        
+                
+                <Reference class="sailpoint.object.Rule" name="Identity Get Full Name"/>
+                                      
+            
+            </RuleRef>
+                            
+        
+        </Field>
+                  
+    
+    </Section>
+        
+
+</Form>

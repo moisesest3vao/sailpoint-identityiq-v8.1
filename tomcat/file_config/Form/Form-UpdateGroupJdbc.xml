@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Form PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Form name="Update Group JDBC" type="Application">
+          
+    
+    <Attributes>
+                    
+        
+        <Map>
+                              
+            
+            <entry key="pageTitle" value="Update Group JDBC"/>
+                            
+        
+        </Map>
+                  
+    
+    </Attributes>
+          
+    
+    <Description/>
+          
+    
+    <Section name="Section 1">
+                    
+        
+        <Field authoritative="true" displayName="Description" name="description" required="true" type="string"/>
+                  
+    
+    </Section>
+        
+
+</Form>

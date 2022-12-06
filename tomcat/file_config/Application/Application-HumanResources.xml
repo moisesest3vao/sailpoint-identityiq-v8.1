@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Application PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Application authoritative="true" connector="sailpoint.connector.DelimitedFileConnector" featuresString="DIRECT_PERMISSIONS, NO_RANDOM_ACCESS, DISCOVER_SCHEMA" icon="enterpriseIcon" name="Human Resources" profileClass="" type="DelimitedFile">
+          
+    
+    <AccountCorrelationConfig>
+                    
+        
+        <Reference class="sailpoint.object.CorrelationConfig" name="Human Resources Employee"/>
+                  
+    
+    </AccountCorrelationConfig>
+          
+    
+    <Attributes>
+                    
+        
+        <Map>
+                              
+            
+            <entry key="PassphraseForPrivateKey" value="1:ACP:NvjYfOtzMUxSDxGQ3ez97lcrPtJbyUDfwYuOnhnYDsw="/>
+                              
+            
+            <entry key="PrivateKeyFilePath" value="spadmin"/>
+                              
+            
+            <entry key="acctAggregationEnd">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Date>1618768370061</Date>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="acctAggregationStart">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Date>1618768367991</Date>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="afterProvisioningRule"/>
+                              
+            
+            <entry key="beforeProvisioningRule"/>
+                              
+            
+            <entry key="buildMapRule" value="Human Resources BuildMap Employee"/>
+                              
+            
+            <entry key="columnNames">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <List>
+                                                            
+                        
+                        <String>employeeID</String>
+                                                            
+                        
+                        <String>name</String>
+                                                            
+                        
+                        <String>firstname</String>
+                                                            
+                        
+                        <String>lastname</String>
+                                                            
+                        
+                        <String>email</String>
+                                                            
+                        
+                        <String>departmentName</String>
+                                                            
+                        
+                        <String>departmentCode</String>
+                                                            
+                        
+                        <String>manager</String>
+                                                            
+                        
+                        <String>employeeStatus</String>
+                                                          
+                    
+                    </List>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="compositeDefinition"/>
+                              
+            
+            <entry key="delimiter" value=";"/>
+                              
+            
+            <entry key="file" value="%%FILE_HUMAN_RESOURCES%%"/>
+                              
+            
+            <entry key="fileEncoding" value="%%FILE_TYPE%%"/>
+                              
+            
+            <entry key="filetransport" value="local"/>
+                              
+            
+            <entry key="filterEmptyRecords">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean>true</Boolean>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="group.filetransport" value="local"/>
+                              
+            
+            <entry key="group.filterEmptyRecords">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean>true</Boolean>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="group.partitionMode" value="auto"/>
+                              
+            
+            <entry key="hasHeader">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean>true</Boolean>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="isCaseInsensitiveMerge">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="isSortedByIndexColumn">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="managerCorrelationFilter">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Filter operation="EQ" property="name" value="manager"/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="mergeRows">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="nativeChangeDetectionAttributeScope" value="entitlements"/>
+                              
+            
+            <entry key="nativeChangeDetectionAttributes"/>
+                              
+            
+            <entry key="nativeChangeDetectionEnabled">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean/>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="nativeChangeDetectionOperations"/>
+                              
+            
+            <entry key="parseType" value="delimited"/>
+                              
+            
+            <entry key="partitionMode" value="auto"/>
+                              
+            
+            <entry key="port"/>
+                              
+            
+            <entry key="sftpAuthMethod" value="password"/>
+                              
+            
+            <entry key="stopIfLineHasWrongColumnLength">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Boolean>true</Boolean>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="sysDescriptions">
+                                        
+                
+                <value>
+                                                  
+                    
+                    <Map>
+                                                            
+                        
+                        <entry key="en_US"/>
+                                                          
+                    
+                    </Map>
+                                                
+                
+                </value>
+                                      
+            
+            </entry>
+                              
+            
+            <entry key="templateApplication" value="DelimitedFile Template"/>
+                            
+        
+        </Map>
+                  
+    
+    </Attributes>
+          
+    
+    <CreationRule>
+                    
+        
+        <Reference class="sailpoint.object.Rule" name="Human Resources Creation Employee"/>
+                  
+    
+    </CreationRule>
+          
+    
+    <Owner>
+                    
+        
+        <Reference class="sailpoint.object.Identity" name="spadmin"/>
+                  
+    
+    </Owner>
+          
+    
+    <Schemas>
+                    
+        
+        <Schema displayAttribute="name" identityAttribute="employeeID" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None">
+                              
+            
+            <AttributeDefinition name="employeeID" type="string"/>
+                              
+            
+            <AttributeDefinition name="name" type="string"/>
+                              
+            
+            <AttributeDefinition name="firstname" type="string"/>
+                              
+            
+            <AttributeDefinition name="lastname" type="string"/>
+                              
+            
+            <AttributeDefinition name="email" type="string"/>
+                              
+            
+            <AttributeDefinition name="departmentName" type="string"/>
+                              
+            
+            <AttributeDefinition name="departmentCode" type="string"/>
+                              
+            
+            <AttributeDefinition name="manager" type="string"/>
+                              
+            
+            <AttributeDefinition name="employeeStatus" type="string"/>
+                            
+        
+        </Schema>
+                  
+    
+    </Schemas>
+          
+    
+    <ApplicationScorecard/>
+        
+
+</Application>
