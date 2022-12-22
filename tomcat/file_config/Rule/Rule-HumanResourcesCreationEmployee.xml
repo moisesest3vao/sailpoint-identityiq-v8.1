@@ -92,8 +92,18 @@ Another common operation is to assign a set of initial capabilities based on the
                 
         <![CDATA[
                 
-        String employeeID = account.getAttribute("employeeID");
+        import sailpoint.object.Identity;
+
+String employeeID = account.getAttribute("employeeID");
 identity.setName(employeeID);
+
+String managerID = account.getAttribute("manager");
+if(managerID != null){
+    Identity manager = (Identity) context.getObjectByName(Identity.class, managerID);
+    if(manager != null){
+          identity.setManager(manager);
+    }
+}
             
     ]]>
             
